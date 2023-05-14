@@ -1,5 +1,13 @@
 # raycasting-graphic-editor
 A program that provides an interface for creating 3D graphics using raycasting technology. It is also possible to display the image in the Windows console.
+
+<h2 align = "center">Instruments</h2>
+<ul>
+    <li><strong>SFML</strong> - interface and operations on images</li>
+    <li><strong>Thread library</strong> - processing multiple windows at once</li>
+    <li><strong>Future and Mutex libraries</strong> - splitting the image rendering load on all processor cores</li>
+</ul>
+
 <h2 align = "center">Interface</h2>
 <p>
 The interface allows you to create blocks that store information about objects. The blocks are located in a space where the user can move, change the position of the blocks and change the scale of the "board". Blocks of objects can be activated and deactivated. The contents of the board can be saved and loaded (the location and name of the file is selected by the user).
@@ -11,6 +19,7 @@ The interface allows you to create blocks that store information about objects. 
 
 <h2 align = "center">Raycasting</h2>
 
+The rendering process does not use a graphics card, only processor cores, so the image is created for sometimes a considerable time.
 You can choose in which form the image created by the program will be presented - in the form of ACII characters in the Windows console or in PNG image format.
 <p align = "center">
   <img width = "400px" src = "https://github.com/Aziergar/raycasting-graphic-editor/assets/107803390/498b1fd6-8d95-46d5-8c6c-87705ab54a9c">
